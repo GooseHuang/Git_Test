@@ -4,7 +4,7 @@ try:
 
     PATH_OF_GIT_REPO = r'./.git'  # make sure .git folder is properly configured
     # COMMIT_MESSAGE = input("Please enther the commit message:\n")
-    COMMIT_MESSAGE = "e"
+    COMMIT_MESSAGE = "j"
     def git_push():
         try:
             repo = Repo(PATH_OF_GIT_REPO)
