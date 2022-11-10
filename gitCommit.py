@@ -13,6 +13,7 @@ try:
             repo.index.commit(COMMIT_MESSAGE)
             origin = repo.remote(name='origin')
             origin.push()
+            repo.__del__()
         except Exception as e:
             print('Some error occured while pushing the code:')
             print(e)
@@ -20,7 +21,6 @@ try:
     git_push()
     print("Successed.")
     time.sleep(3)
-    
     
 except Exception as e:
 
