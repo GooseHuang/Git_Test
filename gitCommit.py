@@ -1,5 +1,5 @@
 from git import Repo
-
+import time
 try:
 
     PATH_OF_GIT_REPO = r'./.git'  # make sure .git folder is properly configured
@@ -18,8 +18,10 @@ try:
             print(e)
 
     git_push()
+    time.sleep(3)
+    
     
 except Exception as e:
-    import time
+
     print(e)
     time.sleep(10)
