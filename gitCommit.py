@@ -25,4 +25,4 @@ try:
 except Exception as e:
 
     print(e)
-    time.sleep(10)
+    time.sleep(50)
