@@ -18,6 +18,7 @@ try:
             print(e)
 
     git_push()
+    print("Successed.")
     time.sleep(3)
     
     
